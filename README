@@ -1,1 +1,17 @@
-:)
+This is how I do CI for my web site
+
+The process consists of 3 tasks which can be executed independently
+1) Release 
+	- compile 
+	- execute tests
+2) Backup  
+	- download content from FTP and 
+	- zip-it to Backup-ProjectName 23-3-2011 22-55-32.7z
+3) Deploy 
+	- upload the Artifacts content to FTP
+
+How to reuse ?
+	- rename Environment.ps1.template into Environment.ps1
+	- add Environment.ps1 into your Git/Svn/Tfs ingore KEEP IT JUST FOR YOU, this will ensure credentials privacy and development configuration autonomy
+
+Your feedback will be greatly appreciated
